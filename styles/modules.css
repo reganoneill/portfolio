@@ -1,7 +1,20 @@
 .fa .fa-bars .top-right-menu{
     font-size: 24px;
 }
+.main-nav ul {
+  display: none;
+}
+.main-nav:hover ul{
+    display: block;
 
-.footer-name {
-
+}
+@media screen and (min-width: 768px){
+  .main-nav ul {
+    width: 100%;
+    display: block;
+    list-style: none;
+  }
+.header-right .fa-bars {
+    display: none;
+  }
 }

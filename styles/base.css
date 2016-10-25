@@ -3,7 +3,7 @@ html {
   box-sizing: border-box;
 }
 .site-header {
-  background-color: blue;
+  background-color: rgba(66, 134, 244, .5);
 }
 footer {
   background-color: yellow;
