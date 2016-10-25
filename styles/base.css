@@ -1,0 +1,14 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+.site-header {
+  background-color: blue;
+}
+footer {
+  background-color: yellow;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

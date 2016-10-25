@@ -1,0 +1,33 @@
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.center-element {
+  text-align: center;
+}
+.header-container {
+  max-width: 100%;
+  background-color: yellow;
+}
+.header-left {
+  display: inline-block;
+  float: left;
+  margin: 1em;
+}
+.header-right {
+  display: inline-block;
+  float: right;
+  margin: 1em;
+}
+.first-section {
+  background-color: rgba();
+}
+.inline-list {
+  display: inline-block;
+  list-style: none;
+}
+.block-list {
+  display: block;
+  list-style: none;
+}
