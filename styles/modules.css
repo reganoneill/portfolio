@@ -1,20 +1,47 @@
 .fa .fa-bars .top-right-menu{
-    font-size: 24px;
+  font-size: 24px;
 }
-.main-nav ul {
+.main-nav .nav-overlay {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(29, 55, 41, 0.9);
 }
-.main-nav:hover ul{
-    display: block;
+.nav-overlay ul li{
+  margin: 2em 0;
+  font-weight: bold;
+  font-size: 2em;
+  list-style: none;
 
 }
+.main-nav:hover .nav-overlay{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+
+.profile-photo {
+    height: 14em;
+    width: 14em;
+    border-radius: 60%;
+    z-index: 2;
+    margin-top: -2em;
+}
+/*.cancel-out:hover .nav-overlay {
+  display: none;
+}*/
 @media screen and (min-width: 768px){
-  .main-nav ul {
-    width: 100%;
+  .nav-overlay {
     display: block;
+    width: 100%;
     list-style: none;
   }
-.header-right .fa-bars {
+/*.header-right .fa-bars {
     display: none;
-  }
+  }*/
 }

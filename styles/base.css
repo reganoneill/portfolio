@@ -3,12 +3,16 @@ html {
   box-sizing: border-box;
 }
 .site-header {
-  background-color: rgba(66, 134, 244, .5);
+  background-color: rgb(60, 195, 126);
 }
+
 footer {
-  background-color: yellow;
+  background-color: rgb(60, 195, 126);
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+}
+a {
+  text-decoration: none;
 }
