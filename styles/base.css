@@ -6,9 +6,15 @@ html {
   background-color: rgb(60, 195, 126);
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 footer {
   background-color: rgb(60, 195, 126);
-  position: absolute;
+  /*position: absolute; <--this was causing problems for some reason*/
   right: 0;
   bottom: 0;
   left: 0;
@@ -19,4 +25,7 @@ a {
 }
 a:visited {
   color: white;
+}
+article.template {
+  display: none;
 }

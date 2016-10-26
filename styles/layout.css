@@ -1,8 +1,4 @@
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .center-element {
   text-align: center;
 }
@@ -22,6 +18,10 @@
 }
 .first-section {
   background-color: rgba();
+  border-bottom: 0.5px solid rgb(60, 195, 126);
+}
+.first-section ul {
+  margin-left: -2em;
 }
 .inline-list {
   display: inline-block;
@@ -30,4 +30,7 @@
 .block-list {
   display: block;
   list-style: none;
+}
+.center-horizontal-margin {
+  margin: 0 auto;
 }

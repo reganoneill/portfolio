@@ -14,7 +14,7 @@
     <header class="site-header clearfix">
       <div class="header-container">
         <div class="header-left">
-            <p class="fa fa-certificate">regan o'neill</p>
+            <p class="fa fa-certificate">  regan o'neill</p>
         </div>
         <div class="header-right">
           <nav class="main-nav">
@@ -36,26 +36,46 @@
       <section class="first-section center-element">
           <img class="profile-photo" src="images/me-pup-scarf.jpg">
         <ul>
-          <li class="block-list">Title: UI Builder</li>
+          <li class="block-list">Custom UI Developer</li>
           <li class="block-list">Tools: JS/HTML5/CSS3</li>
           <li class="block-list">Likes: Dogs, Beer, Learning</li>
         </ul>
       </section>
-      <section class="center-element">
+
+
+      <!-- code below copied from partner lab in order to understand process -->
+      <section id="projects">
+        <h1 class="center-element">My Work</h1>
+          <article class="template" data-category="cat">
+            <header>
+              <h4>Title</h4>
+              <div class="byline">
+                Collaborators: <address><a href="" target="_blank">Author Name</a></address>
+                Project Launch Date: <time pubdate datetime="2000-01-01">Publish Time</time>
+              </div>
+            </header>
+          <section class="article-body"></section>
+        </article>
+      </section>
+      <!-- end copied code snippet -->
+
+
+      <!-- <section class="center-element">
         <h2><a href="#">My Work</a></h2>
         <ul>
           <li class="block-list">project one</li>
           <li class="block-list">project two</li>
           <li class="block-list">project three</li>
         </ul>
-      </section>
+      </section> -->
     </main>
     <footer>
       <div class="center-element">
         <p class="footer-name">Regan O'Neill 2016</p>
       </div>
     </footer>
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="scripts/siteProjects.js"></script>
+    <script src="scripts/projectArticle.js"></script>
   </body>
-
-
 </html>

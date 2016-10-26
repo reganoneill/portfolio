@@ -1,6 +1,7 @@
 .fa .fa-bars .top-right-menu{
   font-size: 24px;
 }
+
 .main-nav .nav-overlay {
   display: none;
   position: fixed;
@@ -24,7 +25,6 @@
   width: 100%;
 }
 
-
 .profile-photo {
     height: 14em;
     width: 14em;
@@ -32,16 +32,17 @@
     z-index: 2;
     margin-top: -2em;
 }
-/*.cancel-out:hover .nav-overlay {
-  display: none;
-}*/
+
+.projectBackgroundImages {
+  background-repeat: no-repeat;
+  max-width: 685px;
+  height: 12em;
+}
+
 @media screen and (min-width: 768px){
   .nav-overlay {
     display: block;
     width: 100%;
     list-style: none;
   }
-/*.header-right .fa-bars {
-    display: none;
-  }*/
 }
