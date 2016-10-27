@@ -32,5 +32,17 @@
   list-style: none;
 }
 .center-horizontal-margin {
+
   margin: 0 auto;
+}
+.page-text {
+  width: 60%;
+  line-height: 2;
+}
+#about {
+  display: none;
+}
+#about:nth-child(3) {
+  width: 60%;
+  line-height: 2;
 }

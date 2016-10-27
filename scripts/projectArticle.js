@@ -14,6 +14,7 @@ function Project (options) {
   this.image = options.image;
   this.authorUrl = options.authorUrl;
   this.publishedOn = options.publishedOn;
+  this.description = options.description;
 };
 
 Project.prototype.toHtml = function() {
@@ -28,9 +29,10 @@ Project.prototype.toHtml = function() {
   4. article body
   5. publication*/
   $newProject.find('header').css('background-image','url(' + this.image + ')').addClass('projectBackgroundImages center-horizontal-margin');
-  $newProject.find('h4').text(this.title);
-  $newProject.find('a').attr('href', this.authorUrl);
-  $newProject.find('a').text(this.author);
+  $newProject.find('h3').text(this.title);
+  // $newProject.find('a').attr('href', this.authorUrl);
+  // $newProject.find('a').text(this.author);
+  // $newProject.find('.projectDescription').text(this.description);
   $newProject.find('time[pubdate]').attr('title', this.publishedOn);
   $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
 /* TODO: This cloned article is no longer a template, as it now
