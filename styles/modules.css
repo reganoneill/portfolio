@@ -48,7 +48,7 @@
   height: 100%;
   background-color: rgba(160, 165, 162, 0.5);
   text-align: center;
-  padding-top: 2em;
+  padding: 3em 0;
 }
 
 
@@ -62,7 +62,12 @@
   #projects article {
     display: inline-block;
     width: 50%;
+    float:left;
   }
+  /*#projects article:nth-child(even){
+    float: right;
+  }*/
+
   #projects article.template {
     display: none;
   }
