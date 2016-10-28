@@ -18,26 +18,34 @@ function Project (options) {
 };
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
-
-  $newProject.attr('data-category', this.category);
-  /* TODO: We also need to fill in:
-  1. author name
-  2. author url
-  3. article title
-  4. article body
-  5. publication*/
-  $newProject.find('header').css('background-image','url(' + this.image + ')').addClass('projectBackgroundImages center-horizontal-margin');
-  $newProject.find('h3').text(this.title);
-  // $newProject.find('a').attr('href', this.authorUrl);
-  // $newProject.find('a').text(this.author);
-  // $newProject.find('.projectDescription').text(this.description);
-  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
-  $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-/* TODO: This cloned article is no longer a template, as it now
-has real data attached to it. Remove the class from this new article! */
-  return $newProject;
+//   var $newProject = $('article.template').clone();
+//   $newProject.removeClass('template');
+//
+// // // ADDING HANDLEBARS INTEGRATION
+  var source = $('#project-section-template').html();
+  console.log(source);
+  var templateRender = Handlebars.compile(source);
+  console.log(templateRender);
+  return templateRender(this);
+// // // END HANDLEBARS INTEGRATION
+//
+//   $newProject.attr('data-category', this.category);
+//   /* TODO: We also need to fill in:
+//   1. author name
+//   2. author url
+//   3. article title
+//   4. article body
+//   5. publication*/
+//   $newProject.find('header').css('background-image','url(' + this.image + ')').addClass('projectBackgroundImages center-horizontal-margin');
+//   $newProject.find('h3').text(this.title);
+//   // $newProject.find('a').attr('href', this.authorUrl);
+//   // $newProject.find('a').text(this.author);
+//   // $newProject.find('.projectDescription').text(this.description);
+//   $newProject.find('time[pubdate]').attr('title', this.publishedOn);
+//   $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
+// /* TODO: This cloned article is no longer a template, as it now
+// has real data attached to it. Remove the class from this new article! */
+//   return $newProject;
 };
 
 /* This sort method is a standard JavaScript Array function
