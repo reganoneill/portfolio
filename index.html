@@ -17,13 +17,26 @@
             <h3>{{title}}</h3>
             <div class="byline">
               <address><a href="{{authorUrl}}" target="_blank">{{author}}</a></address>
-              <div class="tab projectDescription"></div>
+              <div class="tab projectDescription">About This Project</div>
               Project Launch Date: <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
             </div>
           </div>
         </header>
     </article>
+    <section class="project-description">
+      {{title}}
+      {{description}}
+    </section>
     </script>
+
+    <!-- adding a new script for a handlebars template - the template is for a project descriptions  -->
+    <script id="project-description-template" type="text/x-handlebars-template">
+      <div class="description-container">
+
+      </div>
+    </script>
+
+
     <!-- END HANDLEBARS TEMPLATING SCRIPT -->
   </head>
   <body>

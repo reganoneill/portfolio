@@ -18,6 +18,11 @@ h3 {
   color: #fff;
   text-shadow: 1.5px 1px gray;
 }
+
+.tab:hover{
+  cursor: pointer;
+}
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;

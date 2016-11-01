@@ -22,19 +22,22 @@ siteMenu.showMenu = function(){
 
 
 
-//This (below) doesn't do anything YET. 
+//This (below) doesn't do anything YET.
 //when a project section is clicked, the other projects are hidden and the
 //clicked on item is displayed in the containing space with additional elements
-projectView.showProject = function(){
+projectView.showDescription = function(){
   //create click event on specific project
-  $('#project').on('click', '.tab', function(){
+  $('.byline').on('click', '.projectDescription' ,function(){
     //hide all children of #project, then show the parent element
     //of the .tab element which was clicked
-    $('#parent').children().hide();
-    console.log('running');
+
+    $('#projects article').hide();
+    $('.project-description').show();
   });
 };
 
+
+
 siteMenu.showMenu();
 aboutView.handleNavMenu();
-projectView.showProject();
+projectView.showDescription();

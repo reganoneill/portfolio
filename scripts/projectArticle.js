@@ -25,7 +25,7 @@ Project.prototype.toHtml = function() {
   var source = $('#project-section-template').html();
   console.log(source);
   var templateRender = Handlebars.compile(source);
-  console.log(templateRender);
+  // console.log(templateRender);
   return templateRender(this);
 // // // END HANDLEBARS INTEGRATION
 //

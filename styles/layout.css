@@ -39,6 +39,14 @@
   width: 60%;
   line-height: 2;
 }
+
+.project-description {
+  display: none;
+  width: 80%;
+  margin: 1em;
+  background-color: yellow;
+}
+
 #about {
   display: none;
 }
