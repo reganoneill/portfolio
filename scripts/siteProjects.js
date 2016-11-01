@@ -25,7 +25,6 @@ var siteProjects = [
     authorUrl:   'https://http.cat/',
     publishedOn: '2016-10-03',
     description: 'Kenyon failed to qualify for his first Indianapolis 500 in 1965. Kenyon\'s tenth career race in a USAC IndyCar was at Langhorne Speedway in Langhorne, Pennsylvania on June 20, 1965. Mel\'s engine blew up sending oil all over the car, his firesuit and the track. He lost control of the car, hit the wall and was knocked unconscious. Jim Hurtubise and Ralph Liguori slid in the oily track and ran straight into Mel\'s fuel tank.'
-
   },
   {
     title:       'Light In The Attic',
@@ -35,6 +34,5 @@ var siteProjects = [
     authorUrl:   'http://lightintheattic.net/',
     publishedOn: '2014-12-03',
     description: 'The Intensive Care Society is the representative body in the United Kingdom for intensive care professionals and patients and the oldest society for critical care medicine in the world. The Society is dedicated to the delivery of the highest quality of critical care to patients in the United Kingdom. It performs many functions for the intensive care community in the United Kingdom such as the production of guidelines and standards, staging national meetings, training courses and focus groups. It represents Intensive Care in wide ranging organisations from the Royal Colleges to the Department of Health and other organisations and societies with a stake or interest in intensive care.'
-
   }
 ];

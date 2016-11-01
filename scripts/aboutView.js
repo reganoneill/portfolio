@@ -20,9 +20,49 @@ siteMenu.showMenu = function(){
   });
 };
 
+MyProject.fetchAll();
 
 
-//This (below) doesn't do anything YET. 
+
+
+
+
+
+
+
+
+// projectView.renderIndexPage = function() {
+//   MyProject.allProjects.forEach(function(a){
+//     $('#articles').append(a.toHtml('#article-template'));
+//     if($('#category-filter option:contains("'+ a.category + '")').length === 0) {
+//       $('#category-filter').append(a.toHtml('#category-filter-template'));
+//     };
+//     if($('#author-filter option:contains("'+ a.author + '")').length === 0) {
+//       $('#author-filter').append(a.toHtml('#author-filter-template'));
+//     };
+//   });
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//This (below) doesn't do anything YET.
 //when a project section is clicked, the other projects are hidden and the
 //clicked on item is displayed in the containing space with additional elements
 projectView.showProject = function(){
@@ -34,6 +74,7 @@ projectView.showProject = function(){
     console.log('running');
   });
 };
+
 
 siteMenu.showMenu();
 aboutView.handleNavMenu();
