@@ -20,6 +20,9 @@ siteMenu.showMenu = function(){
   });
 };
 
+
+
+//This (below) doesn't do anything YET. 
 //when a project section is clicked, the other projects are hidden and the
 //clicked on item is displayed in the containing space with additional elements
 projectView.showProject = function(){
