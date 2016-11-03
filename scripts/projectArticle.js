@@ -9,16 +9,13 @@ function MyProject (opts) {
 MyProject.allProjects = [];
 
 MyProject.prototype.toHtml = function() {
-
 // // // ADDING HANDLEBARS INTEGRATION
   var source = $('#project-section-template').html();
   console.log(source);
   var templateRender = Handlebars.compile(source);
-  // console.log(templateRender);
   return templateRender(this);
 // // // END HANDLEBARS INTEGRATION
 };
-
 MyProject.loadAll = function(inputData) {
   inputData.sort(function(a,b) {
     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -44,9 +41,9 @@ MyProject.fetchAll = function() {
       localStorage.siteProjects=JSON.stringify(data);
       console.log(data);
       MyProject.loadAll(data);
-    });
-    MyProject.allProjects.forEach(function(article) {
-      $('#projects').append(article.toHtml());
+      MyProject.allProjects.forEach(function(article) {
+        $('#projects').append(article.toHtml());
+      });
     });
   }
 };
