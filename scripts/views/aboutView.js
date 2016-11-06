@@ -21,7 +21,6 @@
       $('#' + $idContent).fadeIn();
     });
   };
-  //this shows menu icon when mouseover occurs
   siteMenu.showMenu = function(){
     $('.main-nav').on('mouseover', function(){
       $('.nav-overlay').show();
