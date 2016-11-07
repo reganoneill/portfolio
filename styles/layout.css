@@ -42,7 +42,14 @@
 #about {
   display: none;
 }
+
 #about:nth-child(3) {
   width: 60%;
   line-height: 2;
+}
+.template {
+  display: none;
+}
+.project-summary article {
+  cursor: pointer;
 }

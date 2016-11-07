@@ -59,7 +59,7 @@
     width: 100%;
     list-style: none;
   }
-  #projects article {
+  #projects .project-summary article {
     display: inline-block;
     width: 50%;
     float:left;
@@ -73,5 +73,8 @@
   }
 }
 #projects article.template {
+  display: none;
+}
+.project-details .expanded-project-view {
   display: none;
 }

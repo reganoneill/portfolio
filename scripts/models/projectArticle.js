@@ -19,6 +19,7 @@
       return new MyProject(object);
     });
   };
+  
   MyProject.fetchAll = function(next) {
     if (localStorage.siteProjects) {
       $.ajax({
@@ -47,5 +48,6 @@
       next();
     });
   };
+
   module.MyProject = MyProject;
 })(window);

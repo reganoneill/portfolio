@@ -8,7 +8,20 @@
     //scripts and then append them to particular elements
     MyProject.allArticles.forEach(function(a) {
       //$('#articles').append(a.toHtml($('#article-template')));
-      $('#projects').append(a.toHtml($('#project-section-template')));
+      $('.project-summary').append(a.toHtml($('#project-section-template')));
+      /////11.7 attempting to add new section
+      $('.project-details').append(a.toHtml($('#project-detail-template')));
+    });
+  };
+
+  //allows detailed summary of project
+  projectView.handleProjectDetailedView = function(){
+    // $('.project-detail').hide();
+   //write on 'click' function to display particular project detail
+    $('.project-summary').on('click', 'article', function(a){
+      a.preventDefault();
+      console.log($(this).data('cat'));
+      $('article[data-title="'+ $(this).data('cat') +'"]').toggle();
     });
   };
   //this handles the nav menu inside .main-nav
@@ -27,18 +40,7 @@
     });
   };
   MyProject.fetchAll(projectView.renderProjects);
-  //This (below) doesn't do anything YET.
-  //when a project section is clicked, the other projects are hidden and the
-  //clicked on item is displayed in the containing space with additional elements
-  // projectView.showProject = function(){
-  //   //create click event on specific project
-  //   $('#project').on('click', '.tab', function(){
-  //     //hide all children of #project, then show the parent element
-  //     //of the .tab element which was clicked
-  //     $('#parent').children().hide();
-  //     console.log('running');
-  //   });
-  // };
   siteMenu.showMenu();
   aboutView.handleNavMenu();
+  projectView.handleProjectDetailedView();
 })(window);
