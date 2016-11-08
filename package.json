@@ -1,8 +1,11 @@
 {
-  "name": "ll",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "regan-portfolio",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
