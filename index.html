@@ -9,22 +9,37 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <title>Portfolio</title>
-    <!-- HANDLEBARS TEMPLATING SCRIPT -->
+    <!-- HANDLEBARS TEMPLATING SCRIPTS -->
+    <!-- template for home page showing all project summaries -->
     <script id="project-section-template" type="text/x-handlebars-template">
-      <article class="clearfix" style="background-image: url({{image}})">
+      <article class="clearfix" data-cat="{{title}}" style="background-image: url({{image}})">
         <header class="center-horizontal-margin">
           <div class="inner-header">
             <h3>{{title}}</h3>
             <div class="byline">
               <address><a href="{{authorUrl}}" target="_blank">{{author}}</a></address>
-              <div class="tab projectDescription"></div>
               Project Launch Date: <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
             </div>
           </div>
         </header>
     </article>
     </script>
+
+
+    <!-- template for showing specific projects in detail -->
+    <script id="project-detail-template" type="text/x-handlebars-template">
+      <article data-title="{{title}}" class="clearfix expanded-project-view" style="background-image: url({{image}})">
+        <div class="close-out">CLOSE</div>
+        <div class="center-horizontal-margin">
+          <div class="inner-header">
+            <h3>{{title}}</h3>
+            <div class="tab projectDescription">{{description}}</div>
+          </div>
+        </div>
+    </article>
+    </script>
     <!-- END HANDLEBARS TEMPLATING SCRIPT -->
+
   </head>
   <body>
     <header class="site-header clearfix">
@@ -60,7 +75,13 @@
         </section>
         <section id="projects" class="clearfix">
           <h1 class="center-element">My Work</h1>
-            <article class="template" data-category="cat">
+            <article class="project-details">
+                <!-- all project descriptions get appended here. -->
+            </article>
+            <article class="project-summary">
+                <!-- all project descriptions get appended here. -->
+            </article>
+            <!-- <article class="template" data-category="cat">
               <header>
                 <div class="inner-header">
                   <h3>Title</h3>
@@ -72,7 +93,7 @@
                 </div>
               </header>
             <section class="article-body"></section>
-          </article>
+          </article> -->
         </section>
     </div>
       <section id="about" class="center-element tab-content">
@@ -88,9 +109,14 @@
       </div>
     </footer>
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <!-- just added page.js -->
+    <script src="vendor/scripts/page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <!-- <script src="scripts/siteProjects.js"></script> -->
     <script src="scripts/models/projectArticle.js"></script>
     <script src="scripts/views/aboutView.js"></script>
+    <script src="scripts/controllers/projectController.js"></script>
+    <script src="scripts/controllers/aboutController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>
