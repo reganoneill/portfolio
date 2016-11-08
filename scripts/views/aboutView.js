@@ -24,23 +24,20 @@
       $('article[data-title="'+ $(this).data('cat') +'"]').toggle();
     });
   };
-  //this handles the nav menu inside .main-nav
-  aboutView.handleNavMenu = function(){
-    $('.main-nav').on('click', '.tab', function() {
-      $('.tab-content').hide();
-      $('.nav-overlay').hide();
-      var $idContent = $(this).data().content;
-      console.log($idContent);
-      $('#' + $idContent).fadeIn();
-    });
-  };
+  //show the nav-overlay menu when the icon is moused-over
   siteMenu.showMenu = function(){
     $('.main-nav').on('mouseover', function(){
       $('.nav-overlay').show();
     });
+    siteMenu.hideMenu();
+  };
+  //writing new function to get out of .nav-overlay once it's showing
+  siteMenu.hideMenu = function(){
+    $('.nav-overlay').on('click', function(){
+      $(this).hide();
+    });
   };
   MyProject.fetchAll(projectView.renderProjects);
   siteMenu.showMenu();
-  aboutView.handleNavMenu();
   projectView.handleProjectDetailedView();
 })(window);

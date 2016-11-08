@@ -5,7 +5,7 @@
     /* TODO: Use your DOM skills to reveal only the articles section! */
     // MAKE SURE THIS WORKS...IT DOESNT RN
     $('#about').hide();
-    $('#articles').show();
+    $('#home').show();
   };
 
   module.projectController = projectController;
