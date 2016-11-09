@@ -3,11 +3,15 @@
     single controller function to handle it: */
 page('/', home);
 page('/about', about);
+page('/stats', stats);
 function home(){
   projectController.reveal();
 }
 function about() {
   aboutController.reveal();
+}
+function stats(){
+  statsController.reveal();
 }
 // TODO: What function do we call to activate page.js?
 page();

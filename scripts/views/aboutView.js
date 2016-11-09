@@ -16,7 +16,6 @@
 
   //allows detailed summary of project
   projectView.handleProjectDetailedView = function(){
-    // $('.project-detail').hide();
    //write on 'click' function to display particular project detail
     $('.project-summary').on('click', 'article', function(a){
       a.preventDefault();
@@ -24,6 +23,7 @@
       $('article[data-title="'+ $(this).data('cat') +'"]').toggle();
     });
   };
+
   //show the nav-overlay menu when the icon is moused-over
   siteMenu.showMenu = function(){
     $('.main-nav').on('mouseover', function(){
@@ -31,7 +31,9 @@
     });
     siteMenu.hideMenu();
   };
+
   //writing new function to get out of .nav-overlay once it's showing
+  //it will be called inside the showMenu method
   siteMenu.hideMenu = function(){
     $('.nav-overlay').on('click', function(){
       $(this).hide();
