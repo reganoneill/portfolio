@@ -9,7 +9,8 @@
       Do not forget to call the callback! */
       //DONE
     $.ajax({
-      url: 'https://api.github.com/users/reganoneill/repos',
+      // url: 'https://api.github.com/users/reganoneill/repos',
+      url: 'https://api.github.com/users/seattle-301d14/repos',
       type: 'GET',
       headers: {'Authorization': 'token ' + githubToken},
       success: function(data, message, xhr){
