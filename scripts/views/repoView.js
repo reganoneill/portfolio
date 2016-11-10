@@ -5,9 +5,9 @@
       the append method below. */
   var repoCompiler = Handlebars.compile($('#repo-template').html());
 
-  repoView.allRepos.forEach(function(a) {
-    $('#stats').append(a.toHtml($('#repo-template')));
-  });
+  // repoView.allRepos.forEach(function(a) {
+  //   $('#stats').append(a.toHtml($('#repo-template')));
+  // });
 
   /* NOTE: If all the data is loaded, we can
       render the repos. */
