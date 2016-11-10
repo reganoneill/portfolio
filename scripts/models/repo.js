@@ -10,7 +10,7 @@
       //DONE
     $.ajax({
       // url: 'https://api.github.com/users/reganoneill/repos',
-      url: 'https://api.github.com/users/seattle-301d14/repos',
+      url: 'https://api.github.com/users/reganoneill/repos',
       type: 'GET',
       headers: {'Authorization': 'token ' + githubToken},
       success: function(data, message, xhr){
