@@ -6,7 +6,8 @@
     // MAKE SURE THIS WORKS...IT DOESNT RN
     $('#about').hide();
     $('#stats').hide();
-    $('#home').show();
+    // $('#home').show();
+    $('#projects').show();
   };
 
   module.projectController = projectController;

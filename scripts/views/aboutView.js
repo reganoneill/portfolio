@@ -3,6 +3,10 @@
   var siteMenu = {};
   var projectView = {};
 
+//testing out functionality to remove background image from target when clicked
+  // projectView.expandedImage = function(){
+  //   $(this).css('display', '');
+  // };
   projectView.renderProjects = function(){
     //new method which uses the .toHtml method to load particular Handlebars.js
     //scripts and then append them to particular elements
@@ -19,7 +23,10 @@
    //write on 'click' function to display particular project detail
     $('.project-summary').on('click', 'article', function(a){
       a.preventDefault();
+      // projectView.expandedImage();
       console.log($(this).data('cat'));
+      $(this).attr('style', '').toggle();
+      $(this).addClass('crazy').toggle();
       $('article[data-title="'+ $(this).data('cat') +'"]').toggle();
     });
   };

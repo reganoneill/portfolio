@@ -1,3 +1,4 @@
+/*these are my favicons from the header*/
 .fa .fa-bars .top-right-menu{
   font-size: 24px;
 }
@@ -77,4 +78,10 @@
 }
 .project-details .expanded-project-view {
   display: none;
+}
+
+
+.crazy {
+  background-color: yellow;
+  border: 1em red solid;
 }
