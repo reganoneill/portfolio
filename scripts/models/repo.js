@@ -43,10 +43,16 @@
     // NOTE: refactor this request into an $.get call
     $.when(
      $.get('/github/users/reganoneill/repos', function(data){
+       console.log('about to run repo data...');
        reposObj.allRepos = data;
+       console.log(data);
+       console.log('done running repo data...');
      }),
      $.get('/github/users/reganoneill/followers', function(data){
        reposObj.followers = data;
+       console.log('next - followers: ');
+       console.log(data);
+       console.log('done logging followers');
      })
     ).done(callback);
   };

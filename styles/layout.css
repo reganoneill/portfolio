@@ -56,3 +56,16 @@
 .project-summary article {
   cursor: pointer;
 }
+.project-details .inner-header{
+  background-color: #3CC37E;
+  text-align: left;
+  padding: 0em;
+}
+.project-details .inner-header h3{
+  padding-top: 0.75em;
+  margin-left: 1em;
+}
+.project-details .projectDescription {
+  margin: 1.5em;
+  line-height: 1.5em;
+}

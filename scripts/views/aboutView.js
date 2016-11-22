@@ -8,6 +8,7 @@
   //   $(this).css('display', '');
   // };
   projectView.renderProjects = function(){
+    $('.project-details').fadeOut();
     //new method which uses the .toHtml method to load particular Handlebars.js
     //scripts and then append them to particular elements
     MyProject.allArticles.forEach(function(a) {
@@ -18,18 +19,34 @@
     });
   };
 
-  //allows detailed summary of project
   projectView.handleProjectDetailedView = function(){
-   //write on 'click' function to display particular project detail
     $('.project-summary').on('click', 'article', function(a){
       a.preventDefault();
-      // projectView.expandedImage();
-      console.log($(this).data('cat'));
-      $(this).attr('style', '').toggle();
-      $(this).addClass('crazy').toggle();
-      $('article[data-title="'+ $(this).data('cat') +'"]').toggle();
+      if($(this).attr('data-cat')){
+        var $selectedProj = ($(this).attr('data-cat'));
+        console.log($selectedProj);
+        $('.project-summary').fadeOut();
+        $('.project-details').fadeIn();
+        $('.project-details article').not('[data-title="' + $selectedProj + '"]').hide();
+        $('#projects h2').show();
+      } else {
+        console.log('not working');
+      }
     });
   };
+
+  projectView.returnToSummaries = function(){
+    $('#projects h2').on('click', function(a){
+      a.preventDefault();
+      $('article[data-title]').fadeIn();
+      $('.project-details').fadeOut();
+      $('.project-summary').fadeIn();
+      $('#projects h2').hide();
+
+    });
+
+  };//end returnToSummaries method
+
 
   //show the nav-overlay menu when the icon is moused-over
   siteMenu.showMenu = function(){
@@ -46,7 +63,9 @@
       $(this).hide();
     });
   };
+  $('#projects h2').hide();
   MyProject.fetchAll(projectView.renderProjects);
   siteMenu.showMenu();
+  projectView.returnToSummaries();
   projectView.handleProjectDetailedView();
 })(window);

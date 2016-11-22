@@ -14,6 +14,7 @@
   repoView.renderRepos = function() {
     $('#stats').empty().append(
       reposObj.withTheAttribute('name')
+      // reposObj.followersWithTheAttribute('login')
       .map(repoCompiler)
     );
   };

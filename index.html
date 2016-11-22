@@ -26,8 +26,7 @@
     </script>
     <!-- template for showing specific projects in detail -->
     <script id="project-detail-template" type="text/x-handlebars-template">
-      <article data-title="{{title}}" class="clearfix expanded-project-view" style="background-image: url({{image}})">
-        <div class="close-out">CLOSE</div>
+      <article data-title="{{title}}" class="clearfix expanded-project-view">
         <div class="center-horizontal-margin">
           <div class="inner-header">
             <h3>{{title}}</h3>
@@ -88,6 +87,7 @@
         </section>
         <section id="projects" class="clearfix">
           <h1 class="center-element">My Work</h1>
+          <h2 class="bring-left fa fa-angle-double-left" aria-hidden="true"> All Work</h2>
             <article class="project-details">
                 <!-- all project descriptions get appended here. -->
             </article>
