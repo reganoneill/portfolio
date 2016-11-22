@@ -1,3 +1,4 @@
+/*these are my favicons from the header*/
 .fa .fa-bars .top-right-menu{
   font-size: 24px;
 }
@@ -51,7 +52,12 @@
   padding: 3em 0;
 }
 
-
+#projects h2{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 0.75em;
+  margin-bottom: -2em;
+}
 
 @media screen and (min-width: 768px){
   .nav-overlay {
@@ -64,17 +70,33 @@
     width: 50%;
     float:left;
   }
-  /*#projects article:nth-child(even){
-    float: right;
-  }*/
+.spotlightProj{
+  width: 100%;
+}
 
   #projects article.template {
     display: none;
+  }
+
+  .spotlightProj article {
+    border: 1px red dotted;
+    width: 100%;
+
   }
 }
 #projects article.template {
   display: none;
 }
-.project-details .expanded-project-view {
+/*.project-details {
   display: none;
-}
+}*/
+
+/*.spotlightProj {
+  border: 1px red dotted;
+  width: 100%;
+
+}*/
+/*.crazy {
+  background-color: yellow;
+  border: 1em red solid;
+}*/
