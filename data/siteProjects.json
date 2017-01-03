@@ -34,5 +34,14 @@
     "authorUrl":   "http://lightintheattic.net/",
     "publishedOn": "2014-12-03",
     "description": "The Intensive Care Society is the representative body in the United Kingdom for intensive care professionals and patients and the oldest society for critical care medicine in the world. The Society is dedicated to the delivery of the highest quality of critical care to patients in the United Kingdom. It performs many functions for the intensive care community in the United Kingdom such as the production of guidelines and standards, staging national meetings, training courses and focus groups. It represents Intensive Care in wide ranging organisations from the Royal Colleges to the Department of Health and other organisations and societies with a stake or interest in intensive care."
+  },
+  {
+    "title":       "Fremont Patroller",
+    "category":    "recreational",
+    "image":       "images/fremontPatroller.png",
+    "author":      "Regan O'Neill, Erick Mock, Marc Fieser, Pavel Parkhomey",
+    "authorUrl":   "https://fremont-bike-patroller.herokuapp.com/",
+    "publishedOn": "2016-11-18",
+    "description": "As part of the Code Fellows 301 Intermediate Software Development Course, we teamed up to create a website. The goal was to use a RESTful API to display graphs of bike traffic across the Fremont Bridge."
   }
 ]
