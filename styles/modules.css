@@ -20,22 +20,23 @@
   list-style: none;
 
 }
-/*.main-nav:hover .nav-overlay{
-  display: block;
-  height: 100%;
-  width: 100%;
-}*/
-/*.main-nav .nav-overlay li:nth-child(1):hover{
-  display: block;
-  height: 10%;
-  width: 10%;
-}*/
+
+.home-img-holder {
+  height: 14em;
+  width: 14em;
+  z-index: 2;
+  margin:auto;
+  margin-top: -7em;
+  /**/TODO: delete this
+  outline: 1px red solid;
+}
 .profile-photo {
-    height: 14em;
-    width: 14em;
-    border-radius: 60%;
-    z-index: 2;
-    margin-top: -2em;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 0.5em white solid;
+    /*z-index: 2;
+    margin-top: -2em;*/
 }
 
 .projectBackgroundImages {
@@ -57,6 +58,28 @@
   font-weight: bold;
   padding-left: 0.75em;
   margin-bottom: -2em;
+}
+
+.typewriting {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 4.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 @media screen and (min-width: 768px){

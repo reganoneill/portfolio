@@ -4,6 +4,7 @@ html {
 }
 .site-header {
   background-color: rgb(60, 195, 126);
+  height: 12em;
 }
 a {
   text-decoration: none;
